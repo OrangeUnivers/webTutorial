@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../src/fonts/monaco.css"/>
+    <link rel="stylesheet" type="text/css" href="../index.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/87b26c3ff4.js" crossorigin="anonymous"></script>
+    <title>Tutorial</title>
+</head>
+<body>
+    <a class="last-sector" href="../">Zurück zu HTML</a>
+    <h1 style="margin-left: 20px;">Tutorial for Csongor (CSS)</h1>
+    <p style="margin-left: 15px;">CSS steht für "Cascading Style Sheets" und ist für den Design der Website.</p>
+    <div class="question">
+        <h2>Wie benutzt man CSS?</h2>
+        <h3>Inline:</h3>
+        <p>Man benutzt beim Inline Modi denn Parameter "<code>style</code>". Dies funktioniert in jedem visiblen Objekt. Das benutzt man meistens wenn man die CSS-Deklaration nur einmal braucht.</p>
+        <h4 style="margin-bottom: 5px;">Beispiel:</h4>
+        <div class="code" id="code-start-inline" style="margin-bottom: 20px;">
+            <a class="copy" onclick="copycode(`code-start-inline`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
+            <code><span class="number">1 </span>&lt;p style="..."&gt;Hello World&lt;/p&gt;</code><br>
+            <code> </code>
+        </div><br>
+        <h3>Internal:</h3>
+        <p>Im <code>&lt;head&gt;</code> Element kann man den <code>&lt;style&gt;</code> Element benutzten und dort direct CSS schreiben. Das benutzt man meist wenn es mehrere Objecte mit dem gleichen CSS-Deklarationen gibt.</p>
+        <h4 style="margin-bottom: 5px;">Beispiel:</h4>
+        <div class="code" id="code-start-internal" style="margin-bottom: 20px;">
+            <a class="copy" onclick="copycode(`code-start-internal`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
+            <code><span class="number">1 </span>&lt;head&gt;</code><br>
+            <code><span class="number">2 </span>    &lt;style&gt;...&lt;/style&gt;</code><br>
+            <code><span class="number">3 </span>&lt;/head&gt;</code>
+        </div><br>
+        <h3>External:</h3>
+        <p>Im <code>&lt;head&gt;</code> Element kann man den <code>&lt;link rel="stylesheet" type="text/css" href="..."/&gt;</code> Element benutzten wo man im "<code>href</code>" der Ort der CSS Datei definiert und.</p>
+        <h4 style="margin-bottom: 5px;">Beispiel:</h4>
+        <div class="code" id="code-start-external" style="margin-bottom: 20px;">
+            <a class="copy" onclick="copycode(`code-start-external`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
+            <code><span class="number">1 </span>&lt;link rel="stylesheet" type="text/css" href="../src/fonts/monaco.css"/&gt;</code><br>
+            <code> </code>
+        </div>
+    </div>
+    <div class="question">
+        <h2>CSS-Selektoren</h2>
+        <p>CSS kann Objekte formattieren, aber dafür muss man Elemente wenn CSS Internal/External benutzt erst mal auswählen.</p>
+        <h3>Typ-Selektor:</h3>
+        <p><code>&lt;p&gt;</code> auch als "Paragraph" bekannt ist das Element für Text. Benutze es für Textbereiche.</p>
+        <p><b style="color: rgb(224, 179, 0);">Tipp: </b><code>&lt;br&gt;</code> stellt den nächsten Element auf der nächsten Linie.</p>
+        <h4 style="margin-bottom: 5px;">Beispiel:</h4>
+        <div class="example">
+            <div class="code" id="code-paragraph">
+                <a class="copy" onclick="copycode(`code-paragraph`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
+                <code><span class="number">1 </span>&lt;p&gt;Willkommen zu meiner Website&lt;/p&gt;</code>
+            </div>
+            <div class="html">
+                <p>Willkommen zu meiner Website</p>
+            </div>
+        </div><br>
+        <h3>Klassen-Selektor:</h3>
+        <p><code>&lt;p&gt;</code> auch als "Paragraph" bekannt ist das Element für Text. Benutze es für Textbereiche.</p>
+        <p><b style="color: rgb(224, 179, 0);">Tipp: </b><code>&lt;br&gt;</code> stellt den nächsten Element auf der nächsten Linie.</p>
+        <h4 style="margin-bottom: 5px;">Beispiel:</h4>
+        <div class="example">
+            <div class="code" id="code-paragraph">
+                <a class="copy" onclick="copycode(`code-paragraph`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
+                <code><span class="number">1 </span>&lt;p&gt;Willkommen zu meiner Website&lt;/p&gt;</code>
+            </div>
+            <div class="html">
+                <p>Willkommen zu meiner Website</p>
+            </div>
+        </div><br>
+        <h3>ID-Selektor:</h3>
+        <p><code>&lt;p&gt;</code> auch als "Paragraph" bekannt ist das Element für Text. Benutze es für Textbereiche.</p>
+        <p><b style="color: rgb(224, 179, 0);">Tipp: </b><code>&lt;br&gt;</code> stellt den nächsten Element auf der nächsten Linie.</p>
+        <h4 style="margin-bottom: 5px;">Beispiel:</h4>
+        <div class="example">
+            <div class="code" id="code-paragraph">
+                <a class="copy" onclick="copycode(`code-paragraph`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
+                <code><span class="number">1 </span>&lt;p&gt;Willkommen zu meiner Website&lt;/p&gt;</code>
+            </div>
+            <div class="html">
+                <p>Willkommen zu meiner Website</p>
+            </div>
+        </div><br>
+        <h3>Universalselektor:</h3>
+        <p><code>&lt;p&gt;</code> auch als "Paragraph" bekannt ist das Element für Text. Benutze es für Textbereiche.</p>
+        <p><b style="color: rgb(224, 179, 0);">Tipp: </b><code>&lt;br&gt;</code> stellt den nächsten Element auf der nächsten Linie.</p>
+        <h4 style="margin-bottom: 5px;">Beispiel:</h4>
+        <div class="example">
+            <div class="code" id="code-paragraph">
+                <a class="copy" onclick="copycode(`code-paragraph`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
+                <code><span class="number">1 </span>&lt;p&gt;Willkommen zu meiner Website&lt;/p&gt;</code>
+            </div>
+            <div class="html">
+                <p>Willkommen zu meiner Website</p>
+            </div>
+        </div>
+    </div>
+    <div class="question">
+        <h2><code>&lt;img&gt;</code> Images</h2>
+        <p>
+            <code>&lt;img src="" alt=""&gt;</code> also eine Image (Bild). Es macht ein Bild mit dem Path/URL in "<code>href</code>".
+            <code>&lt;img&gt;</code> hat auch das "<code>alt</code>" Parameter dass eine kurze Beschreibung über dein Bild gibt falls dass Bild nicht ladet.
+        </p>
+        <p><b style="color: rgb(224, 179, 0);">Tipp: </b> Das "<code>width</code>" Parameter setzt die horizontale Grösse des Bilds.</p>
+        <h4 style="margin-bottom: 5px;">Beispiel:</h4>
+        <div class="example">
+            <div class="code" id="code-image">
+                <a class="copy" onclick="copycode(`code-image`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
+                <code><span class="number">1 </span>&lt;img src="https://example.com/mountainscape.jpeg" alt="Mountains" width="400px"&gt;&lt;br&gt;</code><br>
+                <code><span class="number">2 </span>&lt;img src="https://example.com/image.png" alt="Example Image"" width="200px"&gt;</code>
+            </div>
+            <div class="html">
+                <img src="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75" alt="Mountains" width="400px"><br>
+                <img src="https://example.com/image.png" alt="Example Image" width="200px">
+            </div>
+        </div>
+    </div>
+    <div class="question">
+        <h2><code>&lt;a&gt;</code> Anchor</h2>
+        <p><code>&lt;a href=""&gt;</code> auch als "Anchor" bekannt ist das Element für Hyperlinks. Es macht ein Element das dich zu einem Path oder URL führt.</p>
+        <p>Anchors sind nicht nur zu Text limitiert, zum Beispiel würde "<code>&lt;a href=""&gt;&lt;img ...&gt;&lt;/img&gt;&lt;/a&gt;</code>" auch funktionieren.</p>
+        <h4 style="margin-bottom: 5px;">Beispiel:</h4>
+        <div class="example">
+            <div class="code" id="code-anchor">
+                <a class="copy" onclick="copycode(`code-anchor`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
+                <code><span class="number">1 </span>&lt;a href="https://youtube.com/"&gt;Zu YouTube&lt;/a&gt;&lt;br&gt;</code><br>
+                <code><span class="number">2 </span>&lt;a href="https://google.com/"&gt;</code><br>
+                <code><span class="number">3 </span>    &lt;img src="https://google.com/logo.png" alt="Google logo"&gt;</code><br>
+                <code><span class="number">4 </span>&lt;/a&gt;</code>
+            </div>
+            <div class="html">
+                <a href="https://youtube.com/">Zu YouTube</a><br>
+                <a href="https://google.com/"><img src="https://lh3.googleusercontent.com/d_S5gxu_S1P6NR1gXeMthZeBzkrQMHdI5uvXrpn3nfJuXpCjlqhLQKH_hbOxTHxFhp5WugVOEcl4WDrv9rmKBDOMExhKU5KmmLFQVg" alt="Google logo"></a>
+            </div>
+        </div>
+    </div>
+    <div class="question">
+        <h2><code>&lt;ul&gt;</code> oder <code>&lt;ol&gt;</code> oder <code>&lt;dl&gt;</code> Lists</h2>
+        <h3><code>&lt;ul&gt;</code> (Unordered list):</h3>
+        <p>
+            <code>&lt;ul&gt;</code> oder "Unordered list" ist eine Liste die Punktiert ist (Mit •).<br>
+            <code>&lt;il&gt;</code> oder "List item" ist das Element das für jeden Punkt im "<code>ul</code>"" benutzt wird.
+        </p>
+        <h4 style="margin-bottom: 5px;">Beispiel:</h4>
+        <div class="example">
+            <div class="code" id="code-ul">
+                <a class="copy" onclick="copycode(`code-ul`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
+                <code><span class="number">1 </span>&lt;p&gt;Einkaufsliste:&lt;/p&gt;&lt;br&gt;</code><br>
+                <code><span class="number">2 </span>&lt;ul&gt;</code><br>
+                <code><span class="number">3 </span>    &lt;li&gt;Schorle&lt;/li&gt;</code><br>
+                <code><span class="number">4 </span>    &lt;li&gt;Appenzeller&lt;/li&gt;</code><br>
+                <code><span class="number">5 </span>&lt;/ul&gt;</code>
+            </div>
+            <div class="html">
+                <p>Einkaufsliste:</p>
+                <ul>
+                    <li>Schorle</li>
+                    <li>Appenzeller</li>
+                </ul>
+            </div>
+        </div><br>
+        <h3><code>&lt;ol&gt;</code> (Ordered list):</h3>
+        <p>
+            <code>&lt;ol&gt;</code> oder "Ordered list" ist eine Liste die die Numeriert wird (1, 2, 3...).<br>
+            <code>&lt;il&gt;</code> oder "List item" ist das Element das für jeden Punkt im "<code>ol</code>"" benutzt wird.
+        </p>
+        <h4 style="margin-bottom: 5px;">Beispiel:</h4>
+        <div class="example">
+            <div class="code" id="code-ol">
+                <a class="copy" onclick="copycode(`code-ol`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
+                <code><span class="number">1 </span>&lt;p&gt;How to HTML:&lt;/p&gt;&lt;br&gt;</code><br>
+                <code><span class="number">2 </span>&lt;ol&gt;</code><br>
+                <code><span class="number">3 </span>    &lt;li&gt;Make Body&lt;/li&gt;</code><br>
+                <code><span class="number">4 </span>    &lt;li&gt;Improvise&lt;/li&gt;</code><br>
+                <code><span class="number">5 </span>&lt;/ol&gt;</code>
+            </div>
+            <div class="html">
+                <p>How to HTML:</p>
+                <ol>
+                    <li>Make Body</li>
+                    <li>Improvise</li>
+                </ol>
+            </div>
+        </div><br>
+        <h3><code>&lt;dl&gt;</code> (Description list):</h3>
+        <p>
+            <code>&lt;dl&gt;</code> oder "Description list" ist eine Liste die ein Term beschreibt.<br>
+            <code>&lt;dt&gt;</code> oder "Description term" ist das Element das für den Namen des Terms.<br>
+            <code>&lt;dd&gt;</code> oder "Description description" ist das Element das für die Beschreibung des Termes.
+        </p>
+        <h4 style="margin-bottom: 5px;">Beispiel:</h4>
+        <div class="example">
+            <div class="code" id="code-dl">
+                <a class="copy" onclick="copycode(`code-dl`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
+                <code><span class="number">1 </span>&lt;p&gt;HTML Basics:&lt;/p&gt;&lt;br&gt;</code><br>
+                <code><span class="number">2 </span>&lt;dl&gt;</code><br>
+                <code><span class="number">3 </span>    &lt;dt&gt;h1&lt;/dt&gt;</code><br>
+                <code><span class="number">4 </span>    &lt;dd&gt;Heading&lt;/dd&gt;</code><br>
+                <code><span class="number">5 </span>    &lt;dt&gt;p&lt;/dt&gt;</code><br>
+                <code><span class="number">6 </span>    &lt;dd&gt;Paragraph&lt;/dd&gt;</code><br>
+                <code><span class="number">7 </span>    &lt;dt&gt;a&lt;/dt&gt;</code><br>
+                <code><span class="number">8 </span>    &lt;dd&gt;Anchor&lt;/dd&gt;</code><br>
+                <code><span class="number">9 </span>&lt;/dl&gt;</code>
+            </div>
+            <div class="html">
+                <p>HTML Basics:</p>
+                <dl>
+                    <dt>h1</dt>
+                    <dd>Heading</d>
+                    <dt>p</dt>
+                    <dd>Paragraph</d>
+                    <dt>a</dt>
+                    <dd>Anchor</d>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="question">
+        <h2><code>&lt;table&gt;</code> Table</h2>
+        <p>
+            <code>&lt;table&gt;</code> ist das Element der Tabele<br>
+            <code>&lt;tr&gt;</code> oder "Table row" ist das Element für jeder Reihe der Tabele.<br>
+            <code>&lt;th&gt;</code> oder "Table heading" ist das Element das für den Titeln der Spalte.<br>
+            <code>&lt;td&gt;</code> oder "Table data" ist das Element für die Daten der Zelle.
+        </p>
+        <h4 style="margin-bottom: 5px;">Beispiel:</h4>
+        <div class="example">
+            <div class="code" id="code-table">
+                <a class="copy" onclick="copycode(`code-table`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
+                <code><span class="number"> 1 </span>&lt;table&gt;</code><br>
+                <code><span class="number"> 2 </span>    &lt;tr&gt;</code><br>
+                <code><span class="number"> 3 </span>        &lt;th&gt;Person&lt;/th&gt;</code><br>
+                <code><span class="number"> 4 </span>        &lt;th&gt;Abos&lt;/th&gt;</code><br>
+                <code><span class="number"> 5 </span>        &lt;th&gt;Aufrufe&lt;/th&gt;</code><br>
+                <code><span class="number"> 6 </span>    &lt;/tr&gt;</code><br>
+                <code><span class="number"> 7 </span>    &lt;tr&gt;</code><br>
+                <code><span class="number"> 8 </span>        &lt;td&gt;Csongor&lt;/td&gt;</code><br>
+                <code><span class="number"> 9 </span>        &lt;td&gt;286&lt;/td&gt;</code><br>
+                <code><span class="number">10 </span>        &lt;td&gt;230'199&lt;/td&gt;</code><br>
+                <code><span class="number">11 </span>    &lt;/tr&gt;</code><br>
+                <code><span class="number">12 </span>    &lt;tr&gt;</code><br>
+                <code><span class="number">13 </span>        &lt;td&gt;Ralph&lt;/td&gt;</code><br>
+                <code><span class="number">14 </span>        &lt;td&gt;50&lt;/td&gt;</code><br>
+                <code><span class="number">15 </span>        &lt;td&gt;30'170&lt;/td&gt;</code><br>
+                <code><span class="number">16 </span>    &lt;/tr&gt;</code><br>
+                <code><span class="number">17 </span>    &lt;tr&gt;</code><br>
+                <code><span class="number">18 </span>        &lt;td&gt;Juan&lt;/td&gt;</code><br>
+                <code><span class="number">19 </span>        &lt;td&gt;10&lt;/td&gt;</code><br>
+                <code><span class="number">20 </span>        &lt;td&gt;706&lt;/td&gt;</code><br>
+                <code><span class="number">21 </span>    &lt;/tr&gt;</code><br>
+                <code><span class="number">22 </span>&lt;/table&gt;</code><br>
+            </div>
+            <div class="html">
+                <table>
+                    <tr>
+                        <th>Person</th>
+                        <th>Abos</th>
+                        <th>Aufrufe</th>
+                    </tr>
+                    <tr>
+                        <td>Csongor</td>
+                        <td>286</td>
+                        <td>230'199</td>
+                    </tr>
+                    <tr>
+                        <td>Ralph</td>
+                        <td>50</td>
+                        <td>30'170</td>
+                    </tr>
+                    <tr>
+                        <td>Juan</td>
+                        <td>10</td>
+                        <td>706</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="question">
+        <h2><code>&lt;span&gt;</code> oder <code>&lt;div&gt;</code> Container</h2>
+        <h3><code>&lt;span&gt;</code>:</h3>
+        <p><code>&lt;span&gt;</code> ist ein Element das nur für <a href="css/" style="color: chocolate;">CSS</a> benutzt wird und ändert in sich selber nichts.</p>
+        <h4 style="margin-bottom: 5px;">Beispiel:</h4>
+        <div class="example">
+            <div class="code" id="code-span">
+                <a class="copy" onclick="copycode(`code-span`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
+                <code><span class="number">1 </span>Hello &lt;span style="..."&gt;World&lt;/span&gt;</code>
+            </div>
+            <div class="html">
+                Hello <span style="color: chocolate;">World</span>
+            </div>
+        </div><br>
+        <h3><code>&lt;div&gt;</code> (Division):</h3>
+        <p><code>&lt;div&gt;</code> oder "Division" ist wie ein <code>&lt;span&gt;</code> aber macht seinen eigener Platzt für den Inhalt.</p>
+        <h4 style="margin-bottom: 5px;">Beispiel:</h4>
+        <div class="example">
+            <div class="code" id="code-div">
+                <a class="copy" onclick="copycode(`code-div`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
+                <code><span class="number">1 </span>Hello &lt;div&gt;World&lt;/div&gt;</code>
+            </div>
+            <div class="html">
+                Hello <div>World</div>
+            </div>
+        </div>
+    </div>
+    <div class="question">
+        <h2><code>&lt;b&gt;</code> oder <code>&lt;i&gt;</code> Formatter</h2>
+        <h3><code>&lt;b&gt;</code> (Bold):</h3>
+        <p><code>&lt;b&gt;</code> oder "Bold" ist das Element das alles im Element fett macht.</p>
+        <h4 style="margin-bottom: 5px;">Beispiel:</h4>
+        <div class="example">
+            <div class="code" id="code-bold">
+                <a class="copy" onclick="copycode(`code-bold`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
+                <code><span class="number">1 </span>Hello &lt;b&gt;World&lt;/b&gt;</code>
+            </div>
+            <div class="html">
+                Hello <b>World</b>
+            </div>
+        </div><br>
+        <h3><code>&lt;i&gt;</code> (Italic):</h3>
+        <p><code>&lt;i&gt;</code> oder "Italic" ist das Element das alles im Element kursiv macht.</p>
+        <h4 style="margin-bottom: 5px;">Beispiel:</h4>
+        <div class="example">
+            <div class="code" id="code-italic">
+                <a class="copy" onclick="copycode(`code-italic`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
+                <code><span class="number">1 </span>Hello &lt;i&gt;World&lt;/i&gt;</code>
+            </div>
+            <div class="html">
+                Hello <i>World</i>
+            </div>
+        </div>
+    </div>
+    <div style="width:100%; display: flex; justify-content: center; margin-top: 50px; margin-bottom: 40px;">
+        <div class="next-sector">
+            <i class="fa-solid fa-arrow-right left-arrow"></i>
+            <a href="../js/">Zum&nbsp;JS&nbsp;Sektor</a>
+            <i class="fa-solid fa-arrow-left right-arrow"></i>
+        </div>
+    </div>
+    <script src="../index.js" type="text/javascript"></script>
+</body>
+</html>
