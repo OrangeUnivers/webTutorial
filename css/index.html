@@ -47,56 +47,40 @@
         <h2>CSS-Selektoren</h2>
         <p>CSS kann Objekte formattieren, aber dafür muss man Elemente wenn CSS Internal/External benutzt erst mal auswählen.</p>
         <h3>Typ-Selektor:</h3>
-        <p><code>&lt;p&gt;</code> auch als "Paragraph" bekannt ist das Element für Text. Benutze es für Textbereiche.</p>
-        <p><b style="color: rgb(224, 179, 0);">Tipp: </b><code>&lt;br&gt;</code> stellt den nächsten Element auf der nächsten Linie.</p>
+        <p>Wenn man die formattierung von allen Elemente des den gleichen Typen (<code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;hr&gt;</code>) ändern willst benutzt du den Typen-Selektor</p>
         <h4 style="margin-bottom: 5px;">Beispiel:</h4>
-        <div class="example">
-            <div class="code" id="code-paragraph">
-                <a class="copy" onclick="copycode(`code-paragraph`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
-                <code><span class="number">1 </span>&lt;p&gt;Willkommen zu meiner Website&lt;/p&gt;</code>
-            </div>
-            <div class="html">
-                <p>Willkommen zu meiner Website</p>
-            </div>
+        <div class="code" id="code-selector-element">
+            <a class="copy" onclick="copycode(`code-selector-element`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
+            <code><span class="number">1 </span>h1 {</code><br>
+            <code><span class="number">2 </span>  ...</code><br>
+            <code><span class="number">3 </span>}</code>
         </div><br>
         <h3>Klassen-Selektor:</h3>
-        <p><code>&lt;p&gt;</code> auch als "Paragraph" bekannt ist das Element für Text. Benutze es für Textbereiche.</p>
-        <p><b style="color: rgb(224, 179, 0);">Tipp: </b><code>&lt;br&gt;</code> stellt den nächsten Element auf der nächsten Linie.</p>
+        <p>Wenn man die formattierung von allen Elementen mit der gleichen Klasse (die Klasse setzt man mit dem "<code>class</code>" Parameter) ändern willst benutzt du den Klassen-Selektor</p>
         <h4 style="margin-bottom: 5px;">Beispiel:</h4>
-        <div class="example">
-            <div class="code" id="code-paragraph">
-                <a class="copy" onclick="copycode(`code-paragraph`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
-                <code><span class="number">1 </span>&lt;p&gt;Willkommen zu meiner Website&lt;/p&gt;</code>
-            </div>
-            <div class="html">
-                <p>Willkommen zu meiner Website</p>
-            </div>
+        <div class="code" id="code-selector-class">
+            <a class="copy" onclick="copycode(`code-selector-class`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
+            <code><span class="number">1 </span>.highlighted {</code><br>
+            <code><span class="number">2 </span>  ...</code><br>
+            <code><span class="number">3 </span>}</code>
         </div><br>
         <h3>ID-Selektor:</h3>
-        <p><code>&lt;p&gt;</code> auch als "Paragraph" bekannt ist das Element für Text. Benutze es für Textbereiche.</p>
-        <p><b style="color: rgb(224, 179, 0);">Tipp: </b><code>&lt;br&gt;</code> stellt den nächsten Element auf der nächsten Linie.</p>
+        <p>Wenn man die formattierung von von einem Element mit bestimmter ID (die ID setzt man mit dem "<code>id</code>" Parameter) ändern willst benutzt du den ID-Selektor</p>
         <h4 style="margin-bottom: 5px;">Beispiel:</h4>
-        <div class="example">
-            <div class="code" id="code-paragraph">
-                <a class="copy" onclick="copycode(`code-paragraph`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
-                <code><span class="number">1 </span>&lt;p&gt;Willkommen zu meiner Website&lt;/p&gt;</code>
-            </div>
-            <div class="html">
-                <p>Willkommen zu meiner Website</p>
-            </div>
+        <div class="code" id="code-selector-id">
+            <a class="copy" onclick="copycode(`code-selector-id`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
+            <code><span class="number">1 </span>#download-button {</code><br>
+            <code><span class="number">2 </span>  ...</code><br>
+            <code><span class="number">3 </span>}</code>
         </div><br>
         <h3>Universalselektor:</h3>
-        <p><code>&lt;p&gt;</code> auch als "Paragraph" bekannt ist das Element für Text. Benutze es für Textbereiche.</p>
-        <p><b style="color: rgb(224, 179, 0);">Tipp: </b><code>&lt;br&gt;</code> stellt den nächsten Element auf der nächsten Linie.</p>
+        <p>Wenn man die formattierung von allen Elementen in der Website ändern willst benutzt du den Universalselektor</p>
         <h4 style="margin-bottom: 5px;">Beispiel:</h4>
-        <div class="example">
-            <div class="code" id="code-paragraph">
-                <a class="copy" onclick="copycode(`code-paragraph`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
-                <code><span class="number">1 </span>&lt;p&gt;Willkommen zu meiner Website&lt;/p&gt;</code>
-            </div>
-            <div class="html">
-                <p>Willkommen zu meiner Website</p>
-            </div>
+        <div class="code" id="code-selector-universal">
+            <a class="copy" onclick="copycode(`code-selector-universal`)"><i class="fa-regular fa-copy"></i> Code Kopieren</a>
+            <code><span class="number">1 </span>* {</code><br>
+            <code><span class="number">2 </span>  ...</code><br>
+            <code><span class="number">3 </span>}</code>
         </div>
     </div>
     <div class="question">
